@@ -4,7 +4,7 @@ const baseURL = 'https://restcountries.eu/rest/v2/name/'; // all requests go to 
 const countryList = document.querySelector('#country-list');
 const button = document.querySelector('#the-button');
 
-// axios must be in css as script, to use it at the frontend
+// axios must be in html as script, to use it at the frontend
 
 
 function getCountryByInfo(countryName) {  // If a letter is entered, the user gets a list
@@ -57,6 +57,6 @@ function getCountryByInfo2(countryName) {
 button.addEventListener('click', () => {
     const country = document.getElementById('the-input').value;
     
-    getCountryInfo(country);
+    getCountryByInfo(country);
 });
 
